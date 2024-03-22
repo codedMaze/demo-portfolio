@@ -10,7 +10,7 @@ type Props = {
 
 const Card = ({ img, description, title }: Props) => {
   return (
-    <div className="flex flex-col w-[31%]">
+    <div className="flex flex-col lg:w-[31%] w-full">
       <div className="w-full relative h-[300px] mb-4">
         <Image src={img} alt="catelogue" fill />
       </div>

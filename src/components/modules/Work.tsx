@@ -5,9 +5,9 @@ type Props = {};
 
 const Work = (props: Props) => {
   return (
-    <div className="block lg:w-[1050px] mx-auto my-14">
+    <div className="block lg:w-[1050px] my-14 px-6">
       <Title className="text-center text-2xl mb-8">Latest work</Title>
-      <div className="flex flex-col lg:flex-row gap-8 w-full justify-start flex-wrap">
+      <div className="flex flex-col lg:flex-row lg:gap-8 gap-12 lg:min-w-full max-w-[400px] min-w-[350px] w-full justify-start flex-wrap">
         <Card
           img="/Rectangle 1181.png"
           description="UI, Art drection"
