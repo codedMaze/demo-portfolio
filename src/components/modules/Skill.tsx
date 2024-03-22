@@ -7,11 +7,11 @@ type Props = {};
 
 const Skill = (props: Props) => {
   return (
-    <div className="block lg:w-[1100px] mx-auto my-14 w-full">
+    <div className="block lg:max-w-[1050px] lg:w-full lg:min-[90%] mx-auto my-14 w-full">
       <Title className="text-center text-2xl mb-8">Skill</Title>
-      <div className="flex flex-col lg:flex-row gap-8 w-full lg:justify-between justify-center flex-wrap">
+      <div className="flex flex-col lg:flex-row gap-8 w-full lg:justify-between justify-center md:items-center flex-wrap">
         {skills.map((skill) => (
-          <div className="flex px-9 py-6 lg:w-[48%] gap-4">
+          <div className="flex py-6 lg:w-[48%] md:w-[60%] gap-4">
             <div className="w-16 h-12 relative">
               <Image fill src={skill.icon} alt="skill" />
             </div>

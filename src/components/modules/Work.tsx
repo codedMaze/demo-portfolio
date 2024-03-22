@@ -5,7 +5,7 @@ type Props = {};
 
 const Work = (props: Props) => {
   return (
-    <div className="block lg:w-[1050px] my-14 px-6">
+    <div className="block lg:max-w-[1050px] lg:w-full lg:min-[90%] my-14">
       <Title className="text-center text-2xl mb-8">Latest work</Title>
       <div className="flex flex-col lg:flex-row lg:gap-8 gap-12 lg:min-w-full max-w-[400px] min-w-[350px] w-full justify-start flex-wrap">
         <Card

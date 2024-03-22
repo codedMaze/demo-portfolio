@@ -6,7 +6,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="flex lg:w-[950px] lg:flex-row flex-col items-center justify-between mt-16 gap-10">
+    <div className="flex lg:max-w-[1050px] lg:w-full lg:min-[90%] lg:flex-row flex-col items-center justify-between mt-16 gap-10">
       <div className="flex flex-col gap-4 max-w-[350px]">
         <SubTitle className="text-2xl">Branding | Image making </SubTitle>
         <Title className="text-5xl">Visual Designer</Title>
