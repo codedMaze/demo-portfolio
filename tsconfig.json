@@ -19,7 +19,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@ui": ["./src/components/common/"]
+      "@ui": ["./src/components/common/"],
+      "@icon": ["./src/components/icon"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
