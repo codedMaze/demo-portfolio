@@ -10,7 +10,7 @@ const Navbar = (props: Props) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visibleBg, setVisibleBg] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +20,7 @@ const Navbar = (props: Props) => {
       setShowMenu(false);
     };
     const handleOutsideClick = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event?.target)) {
+      if (menuRef.current && !menuRef.current.contains(event?.target as Node)) {
         setShowMenu(false);
       }
     };
@@ -72,6 +72,7 @@ const Navbar = (props: Props) => {
         <nav className="fixed lg:hidden items-center flex flex-col right-0 top-20 w-48  z-[100] h-max ease-linear duration-200">
           {navLists.map((list) => (
             <Navlink
+              key={list.href}
               href={list.href}
               className={`${"text-white"} bg-red-400 text-xl font-medium py-4 w-full border-b border-dotted ease-in-out duration-150 hover:bg-red-400/90`}
             >
